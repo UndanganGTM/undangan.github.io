@@ -340,7 +340,7 @@ footer li {
 }
 
 /* Mobile Phone */
-@media (max-width: 390px) {
+@media (max-width: 560px) {
   html {
     font-size: 50%;
   }
