@@ -16,12 +16,11 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(Img/Contoh\ sampul.jpg);
+  background-image: url(Img/sampul.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   z-index: -1;
-  filter: grayscale();
 }
 
 .hero {
@@ -36,7 +35,7 @@ body {
 }
 
 .hero h1 {
-  font-family: "Sacramento", cursive;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 6rem;
 }
 
@@ -76,7 +75,7 @@ body {
 
 .mynavbar .navbar-brand,
 .mynavbar .offcanvas-title {
-  font-family: "Sacramento", cursive;
+  font-family: "Times New Roman", Times, serif;
   font-size: 3.2rem;
   font-weight: bold;
 }
@@ -95,7 +94,7 @@ body {
   background-size: cover;
   background-repeat: repeat;
   background-size: 10rem;
-  min-height: 100vh;
+  min-height: 50vh;
   margin-top: -6rem;
   padding-top: 15rem;
 }
@@ -198,165 +197,6 @@ body {
   font-weight: 300;
 }
 
-.story,
-.gallery,
-.rsvp,
-.gifts {
-  padding-top: 10rem;
-  padding-bottom: 8rem;
-}
-
-.story span,
-.gallery span,
-.gifts span {
-  text-transform: uppercase;
-  color: #666;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-  display: block;
-  margin-bottom: 1rem;
-}
-
-.story p,
-.gallery p,
-.rsvp p,
-.gifts p {
-  font-size: 1rem;
-  font-weight: 300;
-}
-
-.timeline {
-  list-style: none;
-  padding: 1.4rem 0;
-  margin-top: 1rem;
-  position: relative;
-}
-
-.timeline::before {
-  content: "";
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  width: 1px;
-  background-color: #ccc;
-  left: 50%;
-}
-
-.timeline li {
-  margin-bottom: 1.5rem;
-  position: relative;
-}
-
-.timeline li::before,
-.timeline li::after {
-  content: "";
-  display: table;
-}
-
-.timeline li::after {
-  clear: both;
-}
-
-.timeline li .timeline-image {
-  width: 160px;
-  height: 160px;
-  background-color: #ccc;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 50%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.timeline li .timeline-panel {
-  width: 40%;
-  float: left;
-  border: 1px solid #ccc;
-  padding: 2rem;
-  position: relative;
-  border-radius: 8px;
-  background-color: #fff;
-}
-
-.timeline li .timeline-panel::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  border-top: 15px solid transparent;
-  border-left: 15px solid #ccc;
-  border-right: 0 solid #ccc;
-  border-bottom: 15px solid transparent;
-  top: 80px;
-  right: -15px;
-}
-
-.timeline li .timeline-panel::after {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  border-top: 14px solid transparent;
-  border-left: 14px solid #fff;
-  border-right: 0 solid #fff;
-  border-bottom: 14px solid transparent;
-  top: 81px;
-  right: -13px;
-}
-
-.timeline li.timeline-inverted .timeline-panel {
-  float: right;
-}
-.timeline li.timeline-inverted .timeline-panel::before {
-  border-left-width: 0;
-  border-right-width: 15px;
-  left: -15px;
-  right: auto;
-}
-
-.timeline li.timeline-inverted .timeline-panel::after {
-  border-left-width: 0;
-  border-right-width: 14px;
-  left: -13px;
-  right: auto;
-}
-
-.gallery {
-  background-color: #f5f5f5;
-}
-
-.rsvp {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.505), rgba(0, 0, 0, 0.505)),
-    url(Img/40.-PaTukku-Pare-Ukiran-Toraja.jpg.webp);
-  background-size: cover;
-  background-repeat: repeat;
-  background-size: 10rem;
-}
-
-.rsvp h2 {
-  font-size: 4.5rem;
-}
-
-.rsvp p {
-  color: white;
-}
-
-.rsvp form label {
-  color: white;
-}
-
-.rsvp button {
-  background-color: var(--pink);
-  color: white;
-  border: 1px solid var(--pink);
-}
-
-.rsvp button:hover {
-  background-color: white;
-  color: var(--pink);
-  border: 1px solid white;
-}
-
 .calendar-btn {
   background-color: var(--pink); /* Merah Marun/Terakota */
   color: #fff;
@@ -365,6 +205,14 @@ body {
 .calendar-btn:hover {
   background-color: #af1200;
   transform: translateY(-2px);
+}
+
+.penutup {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.505), rgba(0, 0, 0, 0.505)),
+    url(Img/8.-Pa-Lolo-Tabang-Ukiran-Toraja.jpg.webp);
+  background-size: cover;
+  background-repeat: repeat;
+  background-size: 10rem;
 }
 
 footer {
@@ -497,13 +345,17 @@ footer li {
     font-size: 50%;
   }
 
+  .hero h1 {
+    padding-bottom: 50rem;
+  }
+
   .mynavbar .nav-link {
     font-size: 2rem;
     text-align: center;
   }
 
   .simply-countdown-cyber {
-    padding-bottom: 50rem;
+    padding-bottom: 5rem;
   }
 
   .timeline li .timeline-image {
